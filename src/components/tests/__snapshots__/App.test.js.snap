@@ -1,7 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders correctly 1`] = `
-<div>
-  This is the root (App.js) component. Use it to render other components/routes
+<div
+  style={Object {}}
+>
+  <Audio
+    key="audio/clap"
+    keyToPress="Q"
+    src="audio/clap"
+  />
+  <Audio
+    key="audio/crash"
+    keyToPress="W"
+    src="audio/crash"
+  />
+  <Audio
+    key="audio/hihat"
+    keyToPress="E"
+    src="audio/hihat"
+  />
+  <Audio
+    key="audio/kick"
+    keyToPress="A"
+    src="audio/kick"
+  />
+  <Audio
+    key="audio/openhat"
+    keyToPress="S"
+    src="audio/openhat"
+  />
+  <Audio
+    key="audio/snare-1"
+    keyToPress="D"
+    src="audio/snare-1"
+  />
+  <Audio
+    key="audio/snare-2"
+    keyToPress="Z"
+    src="audio/snare-2"
+  />
+  <Audio
+    key="audio/tom-1"
+    keyToPress="X"
+    src="audio/tom-1"
+  />
+  <Audio
+    key="audio/tom-2"
+    keyToPress="C"
+    src="audio/tom-2"
+  />
 </div>
 `;

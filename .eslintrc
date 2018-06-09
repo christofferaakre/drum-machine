@@ -16,6 +16,8 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/forbid-prop-types": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
     "import/no-named-as-default": "off",
     "one-var": "off",
 
@@ -25,7 +27,11 @@
     "no-plusplus": "off",
     "comma-dangle": ["error", "always"],
     "arrow-spacing": ["error", { "before": true, "after": true }],
-    "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": false }],
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      { "requireReturnForObjectLiteral": false }
+    ],
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "computed-property-spacing": "off",
     "array-bracket-spacing": [
@@ -57,7 +63,10 @@
     "init-declarations": "off",
     "array-callback-return": "off",
     "jsx-quotes": ["error", "prefer-single"],
-    "key-spacing": ["error", { "mode": "minimum", "afterColon": true, "align": "colon" }],
+    "key-spacing": [
+      "error",
+      { "mode": "minimum", "afterColon": true, "align": "colon" }
+    ],
     "lines-around-comment": "off",
     "max-depth": "off",
     "max-lines": "off",
@@ -91,7 +100,11 @@
     "require-await": "error",
     "import/prefer-default-export": "off",
     "radix": ["error", "always"],
-    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
     "prefer-template": "error",
     "prefer-const": "error",
     "prefer-arrow-callback": "error",
@@ -107,7 +120,10 @@
     "no-confusing-arrow": "off",
     "no-console": "warn",
     "no-else-return": "off",
-    "no-empty-function": ["warn", { "allow": ["arrowFunctions", "methods", "constructors"] }],
+    "no-empty-function": [
+      "warn",
+      { "allow": ["arrowFunctions", "methods", "constructors"] }
+    ],
     "no-eq-null": "warn",
     "no-inline-comments": "off",
     "no-negated-condition": "off",

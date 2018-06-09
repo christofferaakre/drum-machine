@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Audio renders correctly 1`] = `
+<article>
+  <audio
+    id="src"
+    src="src"
+  >
+    Your browser does not support HTML5 audio
+  </audio>
+  <button
+    onClick={[Function]}
+  >
+    Click
+  </button>
+</article>
+`;
