@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  id="header"
+  style={
+    Object {
+      "backgroundColor": "#009688",
+      "color": "white",
+      "padding": 15,
+      "position": "fixed",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "float": "left",
+      }
+    }
+  >
+    <span>
+      Drum machine by Christoffer Aakre
+    </span>
+  </div>
+  <div
+    style={
+      Object {
+        "float": "right",
+      }
+    }
+  >
+    <a
+      className="link"
+      href="https://github.com/christofferaakre/drum-machine"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+        }
+      }
+    >
+      Source on
+      <span
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+          }
+        }
+      >
+        <img
+          alt="Github logo"
+          src="images/github-logo-light.png"
+          style={
+            Object {
+              "height": 26,
+              "margin": "0 5px",
+            }
+          }
+        />
+         Github
+      </span>
+    </a>
+  </div>
+</header>
+`;

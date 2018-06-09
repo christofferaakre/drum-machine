@@ -2,52 +2,156 @@
 
 exports[`App renders correctly 1`] = `
 <div
-  style={Object {}}
+  id="container"
 >
-  <Audio
-    key="audio/clap"
-    keyToPress="Q"
-    src="audio/clap"
-  />
-  <Audio
-    key="audio/crash"
-    keyToPress="W"
-    src="audio/crash"
-  />
-  <Audio
-    key="audio/hihat"
-    keyToPress="E"
-    src="audio/hihat"
-  />
-  <Audio
-    key="audio/kick"
-    keyToPress="A"
-    src="audio/kick"
-  />
-  <Audio
-    key="audio/openhat"
-    keyToPress="S"
-    src="audio/openhat"
-  />
-  <Audio
-    key="audio/snare-1"
-    keyToPress="D"
-    src="audio/snare-1"
-  />
-  <Audio
-    key="audio/snare-2"
-    keyToPress="Z"
-    src="audio/snare-2"
-  />
-  <Audio
-    key="audio/tom-1"
-    keyToPress="X"
-    src="audio/tom-1"
-  />
-  <Audio
-    key="audio/tom-2"
-    keyToPress="C"
-    src="audio/tom-2"
-  />
+  <Header />
+  <div
+    id="drum-machine"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "height": "100vh",
+        "justifyContent": "center",
+        "padding": 25,
+      }
+    }
+  >
+    <div
+      id="drum-pads-container"
+      style={
+        Object {
+          "display": "grid",
+          "gridGap": 15,
+          "gridTemplateColumns": "1fr 1fr 1fr",
+        }
+      }
+    >
+      <Audio
+        handlePlay={[Function]}
+        key="audio/clap.wav"
+        keyToPress="Q"
+        name="Clap"
+        src="audio/clap.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/crash.wav"
+        keyToPress="W"
+        name="Crash"
+        src="audio/crash.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/hihat.wav"
+        keyToPress="E"
+        name="Hi-hat"
+        src="audio/hihat.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/kick.wav"
+        keyToPress="A"
+        name="Kick"
+        src="audio/kick.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/openhat.wav"
+        keyToPress="S"
+        name="Open-hat"
+        src="audio/openhat.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/snare-1.wav"
+        keyToPress="D"
+        name="Snare 1"
+        src="audio/snare-1.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/snare-2.wav"
+        keyToPress="Z"
+        name="Snare 2"
+        src="audio/snare-2.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/tom-1.wav"
+        keyToPress="X"
+        name="Tom 1"
+        src="audio/tom-1.wav"
+        volume={0.5}
+      />
+      <Audio
+        handlePlay={[Function]}
+        key="audio/tom-2.wav"
+        keyToPress="C"
+        name="Tom 2"
+        src="audio/tom-2.wav"
+        volume={0.5}
+      />
+    </div>
+    <div
+      id="display"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "padding": 15,
+          "width": 200,
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#009688",
+            "fontSize": 28,
+            "padding": 15,
+          }
+        }
+      >
+        Click a drum
+      </span>
+      <div
+        id="slider-container"
+        style={
+          Object {
+            "padding": "0 25px",
+            "width": 200,
+          }
+        }
+      >
+        <Slider
+          handleLabel=""
+          id="volume-slider"
+          labels={Object {}}
+          max={100}
+          min={0}
+          onChange={[Function]}
+          orientation="horizontal"
+          reverse={false}
+          step={1}
+          tooltip={true}
+          value={50}
+        />
+      </div>
+      <span>
+        Volume: 
+        50
+        %
+      </span>
+    </div>
+  </div>
 </div>
 `;

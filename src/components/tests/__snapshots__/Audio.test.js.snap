@@ -1,17 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Audio renders correctly 1`] = `
-<article>
+<div
+  className="drum-pad"
+  id="drum-pad-container-src"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#b2dfdb",
+      "color": "white",
+      "padding": 25,
+    }
+  }
+>
+  K
   <audio
-    id="src"
+    className="clip"
+    id="K"
+    onEnded={[Function]}
+    onPlay={[Function]}
     src="src"
+    volume={0.5}
   >
-    Your browser does not support HTML5 audio
+    Unfortunately, it seems your browser does not support HTML5 audio, and this drum machine relies heavily on it
   </audio>
-  <button
-    onClick={[Function]}
-  >
-    Click
-  </button>
-</article>
+</div>
 `;
