@@ -18,6 +18,9 @@ export class Audio extends React.Component {
   render() {
     const { src, keyToPress, volume, } = this.props;
 
+    if (this.audio) {
+      this.audio.volume = volume;
+    }
     return (
       <div
         onClick={() => this.audio.play()}
